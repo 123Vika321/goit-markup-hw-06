@@ -21,8 +21,8 @@
     <header class="header" id="top">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-navigation-logo" href="./index.html"
-            >Web<span class="header-logo">Studio</span></a
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="header-logo-path">Studio</span></a
           >
           <ul class="header-navigation">
             <li class="header-navigation-list">
@@ -55,6 +55,92 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-button"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close">
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-navigation">
+              <li class="mobile-menu-navigation-list">
+                <a
+                  href="./index.html"
+                  class="mobile-menu-navigation-list-link carrent"
+                >
+                  Studio
+                </a>
+              </li>
+              <li class="mobile-menu-navigation-list">
+                <a href="#" class="mobile-menu-navigation-list-link">
+                  Portfolio
+                </a>
+              </li>
+              <li class="mobile-menu-navigation-list">
+                <a href="#" class="mobile-menu-navigation-list-link">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts-list">
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mobile-menu-social-icon">
+              <li class="mobile-menu-icon-link">
+                <a href="#" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-mob"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-link">
+                <a href="#" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-link">
+                <a href="#" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-link">
+                <a href="#" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-mob"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -128,7 +214,8 @@
           <ul class="teams-list">
             <li class="teams-photos">
               <img
-                src="./images/img1.jpg"
+                src="./images/img1-min.jpg"
+                srcset="./images/img1-min.jpg 1x, ./images/img1.jpg 2x"
                 width="264"
                 height="260"
                 alt="Product_Designer_Mark_Guerrero"
@@ -140,7 +227,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                        <use href="./images/icons.svg#icon-instagram-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -161,7 +248,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -170,7 +257,8 @@
             </li>
             <li class="teams-photos">
               <img
-                src="./images/img2.jpg"
+                src="./images/img2-min.jpg"
+                srcset="./images/img2-min.jpg 1x, ./images/img2.jpg 2x"
                 width="264"
                 height="260"
                 alt="Frontend_Developer_Tom_Ford"
@@ -182,7 +270,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                        <use href="./images/icons.svg#icon-instagram-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -203,7 +291,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -212,7 +300,8 @@
             </li>
             <li class="teams-photos">
               <img
-                src="./images/img3.jpg"
+                src="./images/img3-min.jpg"
+                srcset="./images/img3-min.jpg 1x, ./images/img3.jpg 2x"
                 width="264"
                 height="260"
                 alt="Marketing_Camila_Garcia"
@@ -224,7 +313,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                        <use href="./images/icons.svg#icon-instagram-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -245,7 +334,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -254,7 +343,8 @@
             </li>
             <li class="teams-photos">
               <img
-                src="./images/img4.jpg"
+                src="./images/img4-min.jpg"
+                srcset="./images/img4-min.jpg 1x, ./images/img4.jpg 2x"
                 width="264"
                 height="260"
                 alt="UI_Designer_Daniel_Wilson"
@@ -266,7 +356,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                        <use href="./images/icons.svg#icon-instagram-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -287,7 +377,7 @@
                   <li class="teams-icon-link">
                     <a href="#" class="teams-social-link">
                       <svg class="teams-icon-social" width="16px" height="16px">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-mob"></use>
                       </svg>
                     </a>
                   </li>
@@ -305,7 +395,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/app.jpg"
+                  src="./images/app-min.jpg"
+                  srcset="./images/app-min.jpg 1x, ./images/app.jpg 2x"
                   width="360"
                   height="300"
                   alt="banking-app"
@@ -324,7 +415,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/qr-code.jpg"
+                  src="./images/qr-code-min.jpg"
+                  srcset="./images/qr-code-min.jpg 1x, ./images/qr-code.jpg 2x"
                   width="360"
                   height="300"
                   alt="qr-code"
@@ -343,7 +435,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/laptop.jpg"
+                  src="./images/laptop-min.jpg"
+                  srcset="./images/laptop-min.jpg 1x, ./images/laptop.jpg 2x"
                   width="360"
                   height="300"
                   alt="laptop add phone"
@@ -362,7 +455,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/taxi.jpg"
+                  src="./images/taxi-min.jpg"
+                  srcset="./images/taxi-min.jpg 1x, ./images/taxi.jpg 2x"
                   width="360"
                   height="300"
                   alt="taxi pay"
@@ -381,7 +475,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/screen.jpg"
+                  src="./images/screen-min.jpg"
+                  srcset="./images/screen-min.jpg 1x, ./images/screen.jpg 2x"
                   width="360"
                   height="300"
                   alt="screenshot"
@@ -400,7 +495,8 @@
             <li class="portfolio-cart">
               <div class="portfolio-picture">
                 <img
-                  src="./images/girl.jpg"
+                  src="./images/girl-min.jpg"
+                  srcset="./images/girl-min.jpg.jpg 1x, ./images/girl.jpg 2x"
                   width="360"
                   height="300"
                   alt="girl"
@@ -438,7 +534,7 @@
             <li class="bottom-icons-social">
               <a href="#" class="bottom-social-link">
                 <svg class="bottom-social-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                  <use href="./images/icons.svg#icon-instagram-mob"></use>
                 </svg>
               </a>
             </li>
@@ -459,7 +555,7 @@
             <li class="bottom-icons-social">
               <a href="#" class="bottom-social-link">
                 <svg class="bottom-social-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  <use href="./images/icons.svg#icon-linkedin-mob"></use>
                 </svg>
               </a>
             </li>
@@ -490,7 +586,7 @@
       </div>
     </footer>
 
-    <div class="overlay is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="pop-up-button-close">
           <svg class="pop-up-icon" width="8" height="8">
@@ -572,8 +668,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="privacy-link">Privacy Policy</a>
+              <span class="privacy-check-icon-link">
+                I accept the terms and conditions of the
+                <a href="#" class="privacy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
