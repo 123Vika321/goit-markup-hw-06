@@ -42,7 +42,6 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--second-family);
   font-weight: 700;
 }
 
@@ -400,6 +399,10 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-navigation-list-link.carrent {
+  color: var(--ocean);
+}
+
 .mobile-menu-contacts-link {
   font-family: var(--font-family);
   font-weight: 500;
@@ -407,6 +410,11 @@ button {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: var(--slate);
+  font-style: normal;
+}
+
+.mobile-menu-contacts-link.carrent {
+  color: var(--iris);
 }
 
 .mobile-menu-contacts {
@@ -476,8 +484,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 96px;
+  padding: 72px 0;
 }
 
 @media (min-resolution: 192dpi) {
@@ -491,6 +498,7 @@ button {
 }
 
 .hero-title {
+  max-width: 216px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -498,7 +506,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  padding: 72px 52px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -513,7 +521,7 @@ button {
   border: none;
   display: block;
   align-items: center;
-  margin: 0 auto 72px;
+  margin: 0 auto;
   min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,7 +536,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-tablet-min.jpg);
-    margin-bottom: 96px;
+    padding: 112px 0;
   }
 
   @media (min-width: 768px) and (min-resolution: 192dpi) {
@@ -544,12 +552,8 @@ button {
   .hero-title {
     font-size: 56px;
     line-height: 107%;
-    padding: 112px 120px 0;
     margin-bottom: 36px;
-  }
-
-  .hero-button {
-    margin-bottom: 112px;
+    max-width: 496px;
   }
 }
 
@@ -577,9 +581,7 @@ button {
 
   .hero-title {
     color: var(--white);
-    margin: 0 auto 48px;
-    max-width: 496px;
-    padding: 0;
+    margin-bottom: 48px;
   }
 
   .hero-button:hover,
@@ -593,7 +595,7 @@ button {
 /*Main section start*/
 
 .main {
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 
 .main-list {
@@ -647,7 +649,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .main {
-    padding-top: 120px;
+    padding: 120px 0;
   }
 
   .main-list {
@@ -695,7 +697,7 @@ button {
 
 .teams {
   background-color: var(--cloud);
-  padding: 96px 28px;
+  padding: 96px 0;
 }
 
 .teams-title-main {
@@ -711,6 +713,10 @@ button {
 
 .teams-list {
   border-radius: 0 0 4px 4px;
+}
+
+.teams-list:last-child {
+  margin: 0;
 }
 
 .teams-photos {
@@ -785,7 +791,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .teams {
-    padding: 96px 0;
     min-width: 768px;
   }
 
@@ -794,7 +799,10 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
+  }
+
+  .teams-photos {
     width: calc((100% -24px) / 2);
   }
 }
@@ -827,8 +835,7 @@ button {
 }
 
 .portfolio {
-  padding-top: 96px;
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -852,7 +859,6 @@ button {
 
 .portfolio-cart {
   width: 100%;
-  height: 400px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -897,8 +903,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 
   .portfolio:hover .overlay {
@@ -913,7 +918,6 @@ button {
 
   .portfolio-cart {
     width: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .portfolio-cart:hover {
@@ -1067,7 +1071,6 @@ button {
 .form-send {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .form-send-text {
