@@ -715,7 +715,7 @@ button {
   border-radius: 0 0 4px 4px;
 }
 
-.teams-list:last-child {
+.teams-photos:last-child {
   margin: 0;
 }
 
@@ -804,6 +804,7 @@ button {
 
   .teams-photos {
     width: calc((100% -24px) / 2);
+    margin: 0;
   }
 }
 
@@ -1071,6 +1072,7 @@ button {
 .form-send {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .form-send-text {
