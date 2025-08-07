@@ -56,16 +56,16 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-button"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close">
+          <button type="button" class="mobile-menu-close" data-menu-close>
             <svg class="mobile-menu-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-button"></use>
             </svg>
@@ -146,14 +146,15 @@
       </div>
     </header>
     <main>
-      <!-- First section-->
       <section class="hero" id="hero-banner">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <!-- Second section-->
+
       <section class="main" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Company features</h2>
@@ -209,7 +210,7 @@
           </ul>
         </div>
       </section>
-      <!--Third section-->
+
       <section class="teams" id="team">
         <div class="container">
           <h2 class="teams-title-main">Our Team</h2>
@@ -389,7 +390,7 @@
           </ul>
         </div>
       </section>
-      <!--Fourth section-->
+
       <section class="portfolio" id="Portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -588,9 +589,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
-        <button type="button" class="pop-up-button-close">
+        <button type="button" class="pop-up-button-close" data-modal-close>
           <svg class="pop-up-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
@@ -681,5 +682,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
